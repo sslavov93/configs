@@ -5,9 +5,8 @@ sudo mv ~/.bashrc .bashrc_bak
 sudo cp bashrc ~/.bashrc
 
 ./simple.sh
-./java.sh
-./IJ.sh
 ./spotify.sh
 ./git.sh
 ./sublime.sh
+./IJ.sh
 

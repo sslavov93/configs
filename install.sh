@@ -6,7 +6,6 @@ sudo cp bashrc ~/.bashrc
 
 ./simple.sh
 ./spotify.sh
-./git.sh
 ./sublime.sh
 ./IJ.sh
-
+./git.sh

@@ -113,3 +113,4 @@ export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export NLTK_DATA="/home/$USER/Tools/nltk_data"
+export PATH="$NLTK_DATA:$PATH"

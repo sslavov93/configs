@@ -1,3 +1,3 @@
-sudo mkdir -p ~/Work/Tools
-sudo mkdir -p ~/Work/GitHub
-sudo mkdir -p ~/Work/Logs
+sudo mkdir -p ~/Tools/nltk_data
+sudo mkdir -p ~/GitHub
+sudo mkdir -p ~/Logs

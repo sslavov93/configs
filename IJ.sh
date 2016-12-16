@@ -7,4 +7,3 @@ tar -zxvf $IJ_ARCHIVE
 rm *.tar.gz
 mv ideaIC* ~/Work/Tools
 ./~/Work/Tools/IJ_VERSION/bin/idea.sh
-

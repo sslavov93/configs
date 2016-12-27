@@ -3,7 +3,7 @@ IJ_ARCHIVE="$IJ_VERSION.tar.gz"
 
 wget https://download.jetbrains.com/idea/$IJ_ARCHIVE
 
-tar -zxvf $IJ_ARCHIVE
-rm *.tar.gz
-mv ideaIC* ~/Work/Tools
+mv $IJ_ARCHIVE ~/Work/Tools
+tar -zxvf ~/Work/Tools/$IJ_ARCHIVE
+rm ~/Work/Tools/*.tar.gz
 ./~/Work/Tools/IJ_VERSION/bin/idea.sh

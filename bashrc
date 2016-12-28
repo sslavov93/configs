@@ -115,5 +115,5 @@ export LC_ALL=en_US.UTF-8
 export NLTK_DATA="/home/$USER/Tools/nltk_data"
 export PATH="$NLTK_DATA:$PATH"
 
-export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre/bin/java"
+export JAVA_HOME="/usr/lib/jvm/java-8-oracle/jre"
 export PATH="$JAVA_HOME:$PATH"

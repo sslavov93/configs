@@ -34,11 +34,6 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
 
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
@@ -59,9 +54,6 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -75,13 +67,43 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+setopt prompt_subst
+autoload colors zsh/terminfo
+colors
 
-export PROMPT="%{${fg_bold[white]}%}λ %{${fg_bold[red]}%}%n@%m%{${fg[white]}%}:%{${fg_bold[blue]}%}%/ %{${fg_bold[white]}%}>%{$reset_color%} "
+function __git_prompt {
+  local DIRTY="%{$fg[yellow]%}"
+  local CLEAN="%{$fg[green]%}"
+  local UNMERGED="%{$fg[red]%}"
+  local RESET="%{$terminfo[sgr0]%}"
+  git rev-parse --git-dir >& /dev/null
+  if [[ $? == 0 ]]
+  then
+    echo -n "["
+    if [[ `git ls-files -u >& /dev/null` == '' ]]
+    then
+      git diff --quiet >& /dev/null
+      if [[ $? == 1 ]]
+      then
+        echo -n $DIRTY
+      else
+        git diff --cached --quiet >& /dev/null
+        if [[ $? == 1 ]]
+        then
+          echo -n $DIRTY
+        else
+          echo -n $CLEAN
+        fi
+      fi
+    else
+      echo -n $UNMERGED
+    fi
+    echo -n `git branch | grep '* ' | sed 's/..//'`
+    echo -n $RESET
+    echo -n "]"
+  fi
+}
+
+
+export PROMPT="%{${fg_bold[white]}%}λ %{${fg_bold[red]}%}%n@%m%{${fg[white]}%}:%{${fg_bold[blue]}%}%/%{${fg[white]}%} > %{$reset_color%}"
+export RPROMPT='$(__git_prompt)'

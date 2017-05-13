@@ -1,8 +1,4 @@
-# Personal Configs & Automatic Install Scripts
-Automatically setup a fresh Ubuntu install with commonly used developer tools.
+# Personal Configurations and Automation Scripts
 
-### Usage
-Settings > Software & Updates > Other Software > Canonical Partners (Must be Checked)
-```
-$ ./install.sh
-```
+`csgo/` - Counter-Strike: Global Offensive config files
+`linux/` - Automatic Ubuntu tool-installer scripts (to be executed post-fresh install)

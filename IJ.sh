@@ -1,4 +1,4 @@
-IJ_VERSION="ideaIC-2016.3.1"
+IJ_VERSION="ideaIC-2017.1.2"
 IJ_ARCHIVE="$IJ_VERSION.tar.gz"
 
 wget https://download.jetbrains.com/idea/$IJ_ARCHIVE

@@ -1,0 +1,6 @@
+mp_limitteams 0
+mp_autoteambalance 0
+exec gamemode_competitive
+bot_kick
+mp_friendlyfire 0
+mp_freezetime 6

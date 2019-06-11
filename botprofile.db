@@ -1,0 +1,911 @@
+//----------------------------------------------------------------------------
+// BotProfile.db
+// Author: Michael S. Booth, Turtle Rock Studios (www.turtlerockstudios.com)
+//
+// This database defines bot "personalities". 
+// Feel free to edit it and define your own bots.
+//
+
+
+//----------------------------------------------------------------------------
+
+//
+// All profiles begin with this data and overwrite their own
+//
+Default
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.22
+	AttackDelay = 0.2
+	Teamwork = 100
+	AimFocusInitial = 0.22			// initial focus spread in degrees (from desired center)
+	AimFocusDecay = 0.1				// how much focus shrinks per second (.25 = 25% of size after 1 sec)
+	AimFocusOffsetScale = 0.10		// controls accuracy when tracking to target (0 == perfect, should always be < 1)
+	AimfocusInterval = 0.22			// how often focus is adjusted (smaller intervals means better movement tracking)
+	WeaponPreference = none
+	Cost = 0
+	Difficulty = HARD
+	VoicePitch = 100	
+	Skin = 0
+	LookAngleMaxAccelNormal = 2000.0
+	LookAngleStiffnessNormal = 300.0
+	LookAngleDampingNormal = 50.0
+	LookAngleMaxAccelAttacking = 5000.0
+	LookAngleStiffnessAttacking = 500.0
+	LookAngleDampingAttacking = 30.0
+End
+
+//----------------------------------------------------------------------------
+
+//
+// These templates inherit from Default and override with their values
+// The name of the template defines a type that is used by individual bot profiles
+//
+
+// weapon preference templates
+Template Rifle
+	WeaponPreference = m4a1
+	WeaponPreference = ak47
+	WeaponPreference = famas
+	WeaponPreference = galilar
+	WeaponPreference = mp7
+End
+
+Template RifleT
+	WeaponPreference = ak47
+	WeaponPreference = m4a1
+	WeaponPreference = galilar
+	WeaponPreference = famas
+	WeaponPreference = mp7
+End
+
+Template Punch
+	WeaponPreference = aug
+	WeaponPreference = sg556
+	WeaponPreference = famas
+	WeaponPreference = galilar
+	WeaponPreference = mp7
+End
+
+Template PunchT
+	WeaponPreference = aug
+	WeaponPreference = sg556
+	WeaponPreference = famas
+	WeaponPreference = galilar
+	WeaponPreference = mp7
+End
+
+Template Sniper
+	WeaponPreference = awp
+	WeaponPreference = scar20
+	WeaponPreference = g3sg1
+	WeaponPreference = ssg08
+	WeaponPreference = famas
+	WeaponPreference = galilar
+	WeaponPreference = mp7
+End
+
+Template Power
+	WeaponPreference = m249
+	WeaponPreference = xm1014
+	WeaponPreference = nova
+	WeaponPreference = famas
+	WeaponPreference = galilar
+	WeaponPreference = mp7
+End
+
+Template Shotgun
+	WeaponPreference = xm1014
+	WeaponPreference = nova
+	WeaponPreference = famas
+	WeaponPreference = galilar
+	WeaponPreference = mp7
+End
+
+Template Spray
+	WeaponPreference = p90
+	WeaponPreference = mp9
+	WeaponPreference = mac10
+	WeaponPreference = mp7
+End
+
+
+// skill templates
+Template Elite
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template Expert
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template VeryHard
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template Hard
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template Tough
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template Normal
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template Fair
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+Template Easy
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
+End
+
+//----------------------------------------------------------------------------
+//
+// These are the individual bot profiles, which inherit first from 
+// Default and then the specified Template(s), in order
+//
+
+
+Elite+Rifle Cliffe
+	Skin = 1
+	VoicePitch = 95
+End
+
+Elite+Spray Minh
+	Skin = 2
+	VoicePitch = 105
+End
+
+Elite+Shotgun Crusher
+	Skin = 4
+	VoicePitch = 84
+End
+
+Elite+Punch Garret
+	Skin = 4
+	VoicePitch = 110
+End
+
+Elite+Power Rock
+	Skin = 2
+	VoicePitch = 80
+End
+
+Elite+PunchT Shark
+	Skin = 4
+	VoicePitch = 90
+End
+
+Elite+Rifle Wolf
+	Skin = 2
+	VoicePitch = 98
+End
+
+Elite+RifleT Gunner
+	Skin = 1
+	VoicePitch = 96
+End
+
+Elite+Sniper Vitaliy
+	Skin = 3
+	VoicePitch = 105
+End
+
+Elite+Punch Ridgway
+	Skin = 3
+	VoicePitch = 115
+End
+
+Elite+RifleT Steel
+	Skin = 1
+	VoicePitch = 84
+End
+
+Elite+PunchT Stone
+	Skin = 4
+	VoicePitch = 86
+End
+
+
+//----------------------------------------
+
+Expert+RifleT Arnold
+	VoicePitch = 85
+End
+
+Expert+Rifle Brett
+	VoicePitch = 100
+End
+
+Expert+Punch Kurt
+	VoicePitch = 95
+End
+
+Expert+Sniper Kyle
+	Cost = 5
+	VoicePitch = 115
+End
+
+Expert+Shotgun Moe
+	VoicePitch = 87
+End
+
+Expert+Rifle Quade
+	VoicePitch = 91
+End
+
+Expert+Rifle Quintin
+	VoicePitch = 101
+End
+
+Expert Ringo
+	VoicePitch = 112
+End
+
+Expert+PunchT Rip
+	VoicePitch = 99
+End
+
+Expert+Rifle Zach
+	VoicePitch = 100
+End
+
+//----------------------------------------
+
+VeryHard+Power Cory
+	Skin = 1
+	VoicePitch = 110
+End
+
+VeryHard+Sniper Doktor_Quinn_Lechitelkata
+	Skin = 3
+	VoicePitch = 93
+End
+
+VeryHard+Rifle Setho_Kaiba
+	Skin = 2
+	VoicePitch = 100
+End
+
+VeryHard+RifleT Vinny
+	Skin = 4
+	VoicePitch = 86
+End
+
+
+//----------------------------------------
+
+Hard+Rifle Brian
+	Skin = 1
+	VoicePitch = 100
+End
+
+Hard+Rifle Chad
+	Skin = 1
+	VoicePitch = 95
+End
+
+Hard+RifleT Chet
+	Skin = 2
+	VoicePitch = 90
+End
+
+Hard+Spray Gabe
+	Skin = 4
+	VoicePitch = 102
+End
+
+Hard+Shotgun Hank_Jenata
+	Skin = 1
+	VoicePitch = 98
+End
+
+Hard+RifleT IVANEEE
+	Skin = 2
+	VoicePitch = 96
+End
+
+Hard+Punch Jim
+	Skin = 4
+	VoicePitch = 103
+End
+
+Hard+PunchT Joe
+	Skin = 1
+	VoicePitch = 105
+End
+
+Hard+Rifle John
+	Skin = 2
+	VoicePitch = 97
+End
+
+Hard+Rifle Tony
+	Skin = 4
+	VoicePitch = 84
+End
+
+Hard+PunchT Tyler
+	Skin = 1
+	VoicePitch = 90
+End
+
+Hard+Rifle Victor
+	Skin = 2
+	VoicePitch = 98
+End
+
+Hard+Sniper Basi_Vladimira
+	Skin = 3
+	VoicePitch = 110
+End
+
+Hard+Spray Zane_Ot_Uan_Dairekshan
+	Skin = 4
+	VoicePitch = 103
+End
+
+Hard+Rifle Fainding_Zimo
+	Skin = 2
+	VoicePitch = 110
+End
+
+//----------------------------------------
+
+Tough+Sniper Adrian
+	Skin = 3
+	VoicePitch = 120
+End
+
+Tough+Sniper Ako_E_Bank_Lefkam
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+Rifle Brad_Fit
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle Connor_Makgregar
+	Skin = 2
+	VoicePitch = 104
+End
+
+Tough+RifleT Dave
+	Skin = 4
+	VoicePitch = 98
+End
+
+Tough Dan
+	Skin = 1
+	VoicePitch = 100
+End
+
+Tough+Rifle Derek
+	Skin = 2
+	VoicePitch = 102
+End
+
+Tough+Shotgun Don_Pederasa
+	Skin = 4
+	VoicePitch = 95
+End
+
+Tough+Rifle Eric
+	Skin = 1
+	VoicePitch = 95
+End
+
+Tough+RifleT Erik
+	Skin = 2
+	VoicePitch = 110
+End
+
+Tough+Rifle Finn
+	Skin = 4
+	VoicePitch = 112
+End
+
+Tough Jeff
+	Skin = 1
+	VoicePitch = 90
+End
+
+Tough+Rifle Kevin_Makalistar
+	Skin = 2
+	VoicePitch = 115
+End
+
+Tough+RifleT Reed
+	Skin = 4
+	VoicePitch = 107
+End
+
+Tough+Rifle Rick
+	Skin = 2
+	VoicePitch = 102
+End
+
+Tough Ted
+	Skin = 1
+	VoicePitch = 98
+End
+
+Tough+Rifle Troy
+	Skin = 2
+	VoicePitch = 100
+End
+
+Tough+RifleT Wade_Unufrito
+	Skin = 4
+	VoicePitch = 95
+End
+
+Tough+Rifle Wayneto
+	Skin = 1
+	VoicePitch = 86
+End
+
+Tough+RifleT Xander_Sirinieto
+	Skin = 2
+	VoicePitch = 100
+End
+
+Tough+Rifle Xavier
+	Skin = 4
+	VoicePitch = 95
+End
+
+//----------------------------------------
+
+Normal+Rifle Adam
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal+PunchT Andy
+	Skin = 2
+	VoicePitch = 90
+End
+
+Normal Chris
+	Skin = 3
+	VoicePitch = 100
+End
+
+Normal Colin
+	Skin = 4
+	VoicePitch = 107
+End
+
+Normal+Rifle Dennis
+	Skin = 1
+	VoicePitch = 104
+End
+
+Normal Doug
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal+Sniper Duffy
+	Skin = 2
+	VoicePitch = 110
+End
+
+Normal Gary
+	Skin = 3
+	VoicePitch = 95
+End
+
+Normal Grant
+	Skin = 4
+	VoicePitch = 112
+End
+
+Normal Greg
+	Skin = 1
+	VoicePitch = 111
+End
+
+Normal+Sniper Ian
+	Skin = 3
+	VoicePitch = 115
+End
+
+Normal Jerry
+	Skin = 4
+	VoicePitch = 112
+End
+
+Normal Jon
+	Skin = 1
+	VoicePitch = 96
+End
+
+Normal Keith
+	Skin = 2
+	VoicePitch = 98
+End
+
+Normal Mark
+	Skin = 4
+	VoicePitch = 110
+End
+
+Normal Matt
+	Skin = 1
+	VoicePitch = 95
+End
+
+Normal+RifleT Mike
+	Skin = 2
+	VoicePitch = 100
+End
+
+Normal Nate
+	Skin = 4
+	VoicePitch = 99
+End
+
+Normal Paul
+	Skin = 3
+	VoicePitch = 98
+End
+
+Normal Scott
+	Skin = 1
+	VoicePitch = 105
+End
+
+Normal Steve
+	Skin = 2
+	VoicePitch = 115
+End
+
+Normal Tom
+	Skin = 3
+	VoicePitch = 110
+End
+
+Normal Yahn
+	Skin = 4
+	VoicePitch = 92
+End
+
+//----------------------------------------
+
+Fair Alfred
+	VoicePitch = 110
+End
+
+Fair Bill
+	VoicePitch = 100
+End
+
+Fair Brandon
+	VoicePitch = 99
+End
+
+Fair+Spray Calvin
+	VoicePitch = 120
+End
+
+Fair Dean
+	VoicePitch = 111
+End
+
+Fair Dustin
+	VoicePitch = 98
+End
+
+Fair Ethan
+	VoicePitch = 112
+End
+
+Fair Harold
+	VoicePitch = 90
+End
+
+Fair Henry
+	VoicePitch = 120
+End
+
+Fair Irving
+	VoicePitch = 118
+End
+
+Fair Jason
+	VoicePitch = 116
+End
+
+Fair+Spray Jenssen
+	VoicePitch = 112
+End
+
+Fair Josh
+	VoicePitch = 114
+End
+
+Fair Martin
+	VoicePitch = 110
+End
+
+Fair Nick
+	VoicePitch = 98
+End
+
+Fair Norm
+	VoicePitch = 92
+End
+
+Fair Orin
+	VoicePitch = 113
+End
+
+Fair Pat
+	VoicePitch = 114
+End
+
+Fair Perry
+	VoicePitch = 115
+End
+
+Fair Ron
+	VoicePitch = 100
+End
+
+Fair Shawn
+	VoicePitch = 102
+End
+
+Fair Tim
+	VoicePitch = 98
+End
+
+Fair Will
+	VoicePitch = 96
+End
+
+Fair Wyatt
+	VoicePitch = 94
+End
+
+//----------------------------------------
+
+Easy Albert
+	VoicePitch = 100
+End
+
+Easy Allen
+	VoicePitch = 110
+End
+
+Easy Bert
+	VoicePitch = 120
+End
+
+Easy Bob
+	VoicePitch = 99
+End
+
+Easy Cecil
+	VoicePitch = 120
+End
+
+Easy Clarence
+	VoicePitch = 125
+End
+
+Easy Elliot
+	VoicePitch = 110
+End
+
+Easy Elmer
+	VoicePitch = 100
+End
+
+Easy Ernie
+	VoicePitch = 112
+End
+
+Easy Eugene
+	VoicePitch = 121
+End
+
+Easy Fergus
+	VoicePitch = 99
+End
+
+Easy Ferris
+	VoicePitch = 119
+End
+
+Easy Frank
+	VoicePitch = 118
+End
+
+Easy Frasier
+	VoicePitch = 117
+End
+
+Easy Fred
+	VoicePitch = 116
+End
+
+Easy George
+	VoicePitch = 115
+End
+
+Easy Graham
+	VoicePitch = 114
+End
+
+Easy Harvey
+	VoicePitch = 112
+End
+
+Easy Irwin
+	VoicePitch = 111
+End
+
+Easy Larry
+	VoicePitch = 105
+End
+
+Easy Lester
+	VoicePitch = 110
+End
+
+Easy Marvin
+	VoicePitch = 109
+End
+
+Easy Neil
+	VoicePitch = 108
+End
+
+Easy Niles
+	VoicePitch = 122
+End
+
+Easy Oliver
+	VoicePitch = 120
+End
+
+Easy Opie
+	VoicePitch = 125
+End
+
+Easy Ryan
+	VoicePitch = 95
+End
+
+Easy Toby
+	VoicePitch = 92
+End
+
+Easy Ulric
+	VoicePitch = 100
+End
+
+Easy Ulysses
+	VoicePitch = 102
+End
+
+Easy Uri
+	VoicePitch = 104
+End
+
+Easy Waldo
+	VoicePitch = 108
+End
+
+Easy Wally
+	VoicePitch = 95
+End
+
+Easy Walt
+	VoicePitch = 100
+End
+
+Easy Wesley
+	VoicePitch = 120
+End
+
+Easy Yanni
+	VoicePitch = 112
+End
+
+Easy Yogi
+	VoicePitch = 99
+End
+
+Easy Yuri
+	VoicePitch = 110
+End

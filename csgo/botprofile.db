@@ -13,25 +13,25 @@
 // All profiles begin with this data and overwrite their own
 //
 Default
-	Skill = 50
-	Aggression = 50
-	ReactionTime = 0.3
-	AttackDelay = 0
-	Teamwork = 75
-	AimFocusInitial = 20			// initial focus spread in degrees (from desired center)
-	AimFocusDecay = 0.7				// how much focus shrinks per second (.25 = 25% of size after 1 sec)
-	AimFocusOffsetScale = 0.30		// controls accuracy when tracking to target (0 == perfect, should always be < 1)
-	AimfocusInterval = 0.8			// how often focus is adjusted (smaller intervals means better movement tracking)
+	Skill = 100
+	Aggression = 100
+	ReactionTime = 0.22
+	AttackDelay = 0.2
+	Teamwork = 100
+	AimFocusInitial = 0.22			// initial focus spread in degrees (from desired center)
+	AimFocusDecay = 0.1				// how much focus shrinks per second (.25 = 25% of size after 1 sec)
+	AimFocusOffsetScale = 0.10		// controls accuracy when tracking to target (0 == perfect, should always be < 1)
+	AimfocusInterval = 0.22			// how often focus is adjusted (smaller intervals means better movement tracking)
 	WeaponPreference = none
 	Cost = 0
-	Difficulty = NORMAL
-	VoicePitch = 100
+	Difficulty = HARD
+	VoicePitch = 100	
 	Skin = 0
 	LookAngleMaxAccelNormal = 2000.0
-	LookAngleStiffnessNormal = 100.0
-	LookAngleDampingNormal = 25.0
-	LookAngleMaxAccelAttacking = 3000.0
-	LookAngleStiffnessAttacking = 150.0
+	LookAngleStiffnessNormal = 300.0
+	LookAngleDampingNormal = 50.0
+	LookAngleMaxAccelAttacking = 5000.0
+	LookAngleStiffnessAttacking = 500.0
 	LookAngleDampingAttacking = 30.0
 End
 
@@ -114,116 +114,113 @@ End
 Template Elite
 	Skill = 100
 	Rank = 1800
-	Aggression = 95
-	ReactionTime = 0.05
+	Aggression = 100
+	ReactionTime = 0.01
 	Cost = 4
 	Difficulty = EXPERT
-	VoicePitch = 85
-	AimFocusInitial = 0.5
-	AimFocusDecay = 0.1
-	AimFocusOffsetScale = 0.05
-	AimfocusInterval = 0.05
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template Expert
 	Skill = 100
 	Rank = 1800
-	Aggression = 95
-	ReactionTime = 0.05
+	Aggression = 100
+	ReactionTime = 0.01
 	Cost = 4
 	Difficulty = EXPERT
-	VoicePitch = 88
-	AimFocusInitial = 0.5
-	AimFocusDecay = 0.1
-	AimFocusOffsetScale = 0.05
-	AimfocusInterval = 0.05
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template VeryHard
 	Skill = 100
 	Rank = 1800
-	Aggression = 95
-	ReactionTime = 0.05
-	Cost = 3
-	Difficulty = HARD
-	VoicePitch = 92
-	AimFocusInitial = 0.5
-	AimFocusDecay = 0.1
-	AimFocusOffsetScale = 0.05
-	AimfocusInterval = 0.05
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template Hard
 	Skill = 100
 	Rank = 1800
-	Aggression = 95
-	ReactionTime = 0.05
-	Cost = 3
-	Difficulty = HARD
-	VoicePitch = 94
-	AimFocusInitial = 0.5
-	AimFocusDecay = 0.1
-	AimFocusOffsetScale = 0.05
-	AimfocusInterval = 0.05
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template Tough
 	Skill = 100
 	Rank = 1800
-	Aggression = 95
-	ReactionTime = 0.05
-	AttackDelay = .70
-	Cost = 2
-	Difficulty = HARD
-	VoicePitch = 96
-	AimFocusInitial = 0.5
-	AimFocusDecay = 0.1
-	AimFocusOffsetScale = 0.05
-	AimfocusInterval = 0.05
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template Normal
-	Skill = 50
-	Rank = 1000
-	Aggression = 30
-	ReactionTime = 0.60
-	AttackDelay = .80
-	Cost = 2
-	Difficulty = NORMAL
-	AimFocusInitial = 12
-	AimFocusDecay = 0.5
-	AimFocusOffsetScale = 0.35
-	AimfocusInterval = 0.60
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template Fair
-	Skill = 25
-	Rank = 850
-	Aggression = 15
-	ReactionTime = 0.60
-	AttackDelay = .90
-	Cost = 1
-	Difficulty = NORMAL
-	VoicePitch = 105
-	AimFocusInitial = 17
-	AimFocusDecay = 0.6
-	AimFocusOffsetScale = 0.5
-	AimfocusInterval = 0.70
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 Template Easy
-	Skill = 5
-	Rank = 600
-	Aggression = 10
-	ReactionTime = 0.60
-	AttackDelay = .70
-	Cost = 1
-	Difficulty = EASY
-	VoicePitch = 110
-	AimFocusInitial = 20
-	AimFocusDecay = 0.7
-	AimFocusOffsetScale = 0.6
-	AimfocusInterval = 0.70
+	Skill = 100
+	Rank = 1800
+	Aggression = 100
+	ReactionTime = 0.01
+	Cost = 4
+	Difficulty = EXPERT
+	VoicePitch = 100
+	AimFocusInitial = 0.01
+	AimFocusDecay = 0.01
+	AimFocusOffsetScale = 0.01
+	AimfocusInterval = 0.01
 End
 
 //----------------------------------------------------------------------------
@@ -349,7 +346,7 @@ VeryHard+Sniper Doktor_Quinn_Lechitelkata
 	VoicePitch = 93
 End
 
-VeryHard+Rifle Seth
+VeryHard+Rifle Setho_Kaiba
 	Skin = 2
 	VoicePitch = 100
 End
@@ -432,7 +429,7 @@ Hard+Spray Zane_Ot_Uan_Dairekshan
 	VoicePitch = 103
 End
 
-Hard+Rifle Zim
+Hard+Rifle Fainding_Zimo
 	Skin = 2
 	VoicePitch = 110
 End
@@ -449,7 +446,7 @@ Tough+Sniper Ako_E_Bank_Lefkam
 	VoicePitch = 95
 End
 
-Tough+Rifle Brad
+Tough+Rifle Brad_Fit
 	Skin = 1
 	VoicePitch = 100
 End
@@ -474,7 +471,7 @@ Tough+Rifle Derek
 	VoicePitch = 102
 End
 
-Tough+Shotgun Don
+Tough+Shotgun Don_Pederasa
 	Skin = 4
 	VoicePitch = 95
 End
@@ -499,7 +496,7 @@ Tough Jeff
 	VoicePitch = 90
 End
 
-Tough+Rifle Kevin
+Tough+Rifle Kevin_Makalistar
 	Skin = 2
 	VoicePitch = 115
 End

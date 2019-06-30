@@ -112,6 +112,6 @@ zstyle :compinstall filename '/home/svet/.zshrc'
 autoload -Uz compinit
 compinit
 
-alias update="pacman -Syu --noconfirm"
+alias update="sudo pacman -Syu --noconfirm"
 alias burgas="ssh svet@xxx.xxx.xx.xx"
 

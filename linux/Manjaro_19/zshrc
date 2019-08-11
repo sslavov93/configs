@@ -113,5 +113,3 @@ autoload -Uz compinit
 compinit
 
 alias update="sudo pacman -Syu --noconfirm"
-alias burgas="ssh svet@xxx.xxx.xx.xx"
-

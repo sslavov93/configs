@@ -43,7 +43,10 @@ sudo yay -Syu --noconfirm spotify
 # Setup Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
-cp zshrc ~/.zshrc
-cp agnoster ~/.oh-my-zsh/themes/agnoster.zsh-theme
+# Make sure to execute the next two commands (beware of context) inside the agnoster zsh default 
+# sudo cp /home/$USER/configs/linux/Manjaro_19/zshrc /home/$USER/.zshrc
+# exit 
+# sudo cp /home/$USER/configs/linux/Manjaro_19/agnoster /home/$USER/configs/linux/Manjaro_19/.oh-my-zsh/themes/agnoster.zsh-theme
 
 echo "Done."
+sudo reboot

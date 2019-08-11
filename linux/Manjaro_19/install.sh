@@ -2,7 +2,7 @@
 sudo pacman -Syu --noconfirm
 
 # Setup base packages
-sudo pacman -Syu --noconfirm zip unzip gzip
+sudo pacman -Syu --noconfirm zip unzip gzip htop net-tools tigervnc
 
 # Setup Git Credentials
 git config --global user.name "sslavov93"
@@ -23,16 +23,20 @@ makepkg -is --noconfirm
 cd ~
 
 # Setup Google Chrome
-yay google-chrome
+sudo yay -Syu --noconfirm google-chrome
 
 # Setup Spotify
-yay spotify
+sudo yay -Syu --noconfirm spotify
+
+# Setup zsh
+chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
 
 # Setup Oh My Zsh
-
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 cp agnoster ~/.oh-my-zsh/themes/agnoster.zsh-theme
 cp zshrc ~/.zshrc
 
 echo "Done."
 
+sudo reboot

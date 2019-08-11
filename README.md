@@ -2,4 +2,4 @@
 
 `csgo/` - Counter-Strike: Global Offensive config files
 
-`linux/` - Automatic Ubuntu tool-installer scripts (to be executed post-fresh install)
+`linux/` - Automatic tool-installer scripts for linux distros I've been using (to be executed post-fresh install)

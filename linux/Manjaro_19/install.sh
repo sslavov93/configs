@@ -4,7 +4,6 @@ mkdir ~/Tools ~/Code
 # Setup zsh
 chsh -s $(which zsh)
 sudo chsh -s $(which zsh)
-cp zshrc ~/.zshrc
 
 # Update all packages first
 sudo pacman -Syu --noconfirm
@@ -44,6 +43,7 @@ sudo yay -Syu --noconfirm spotify
 # Setup Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
+cp zshrc ~/.zshrc
 cp agnoster ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 echo "Done."

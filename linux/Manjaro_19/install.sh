@@ -16,6 +16,13 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_rsa
 cat ~/.ssh/id_rsa.pub
 
+# Setup Autojump
+cd ~/Tools
+git clone git://github.com/wting/autojump.git
+cd autojump
+./install.py
+cd ~
+
 # Setup yay (AUR installer)
 cd ~/Tools
 git clone https://aur.archlinux.org/yay.git
@@ -32,12 +39,11 @@ sudo yay -Syu --noconfirm spotify
 # Setup zsh
 chsh -s $(which zsh)
 sudo chsh -s $(which zsh)
+cp zshrc ~/.zshrc
 
 # Setup Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 cp agnoster ~/.oh-my-zsh/themes/agnoster.zsh-theme
-cp zshrc ~/.zshrc
 
 echo "Done."
-
-sudo reboot

@@ -1,6 +1,11 @@
 # Create Dirs
 mkdir ~/Tools ~/Code
 
+# Setup zsh
+chsh -s $(which zsh)
+sudo chsh -s $(which zsh)
+cp zshrc ~/.zshrc
+
 # Update all packages first
 sudo pacman -Syu --noconfirm
 
@@ -35,11 +40,6 @@ sudo yay -Syu --noconfirm google-chrome
 
 # Setup Spotify
 sudo yay -Syu --noconfirm spotify
-
-# Setup zsh
-chsh -s $(which zsh)
-sudo chsh -s $(which zsh)
-cp zshrc ~/.zshrc
 
 # Setup Oh My Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

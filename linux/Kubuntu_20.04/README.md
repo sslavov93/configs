@@ -1,4 +1,4 @@
-# Auo Install Script
+# Auto Install Script
 Automatically setup a fresh Kubuntu 20.04 install with dev tools I use at the time.
 
 ### Usage

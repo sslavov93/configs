@@ -2,7 +2,7 @@
 sudo apt-get -y update && sudo apt-get -y upgrade && sudo apt-get -y update
 
 # Simple Tools
-sudo apt-get -y install zsh powerline fonts-powerline gparted curl zip unzip htop
+sudo apt-get -y install zsh powerline fonts-powerline gparted curl zip unzip htop meld
 
 # Rust
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

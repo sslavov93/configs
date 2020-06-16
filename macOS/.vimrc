@@ -8,6 +8,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'tomasiser/vim-code-dark'
+Plugin 'scrooloose/nerdtree'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -19,7 +20,6 @@ set autoindent
 set wildmenu
 set ruler
 set number
-autocmd vimenter * NERDTree
 
 colorscheme codedark
 

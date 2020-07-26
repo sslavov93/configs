@@ -1,0 +1,6 @@
+{
+  "python.linting.pylintEnabled": true,
+  "python.linting.enabled": true,
+  "rust-analyzer.serverPath": "/Users/svet/.local/bin/rust-analyzer",
+  "python.jediEnabled": false
+}

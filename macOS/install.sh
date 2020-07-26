@@ -10,7 +10,7 @@ cp .zshrc ~/.zshrc
 cp agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 # Simple Tooling
-brew install htop direnv wget
+brew install htop direnv wget tmux
 
 # Autojump
 git clone git://github.com/wting/autojump.git

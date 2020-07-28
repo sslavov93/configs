@@ -10,7 +10,7 @@ cp .zshrc ~/.zshrc
 cp agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
 # Simple Tooling
-brew install htop direnv wget tmux
+brew install htop direnv wget tmux yarn
 
 # Autojump
 git clone git://github.com/wting/autojump.git
@@ -20,12 +20,19 @@ cd ~
 
 # Vim
 cp .vimrc ~/.vimrc
+
+# Vundle
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
-cp coc-settings.json ~/.vim/coc-settings.json
 
 # COC Setup
 vim -c ':call coc#util#install()'
 vim -c 'CocInstall coc-python coc-rust-analyzer coc-json coc-markdownlint'
+cp coc-settings.json ~/.vim/coc-settings.json
+
+# Rust Analyzer
+curl -L https://github.com/rust-analyzer/rust-analyzer/releases/latest/download/rust-analyzer-linux -o ~/.local/bin/rust-analyzer
+chmod +x ~/.local/bin/rust-analyzer
 
 # Git
 git config --global user.name "sslavov93"

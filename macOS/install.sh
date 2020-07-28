@@ -9,6 +9,12 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 cp .zshrc ~/.zshrc
 cp agnoster.zsh-theme ~/.oh-my-zsh/themes/agnoster.zsh-theme
 
+# Node Setup (COC dependency)
+./uninstall-node.sh
+echo "Please visit https://nodejs.org/en/download/ and download Node"
+echo "Confirm when done by pressing Enter Key"
+read
+
 # Simple Tooling
 brew install htop direnv wget tmux yarn
 

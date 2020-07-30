@@ -1,0 +1,17 @@
+{
+	"coc.preferences.formatOnSaveFiletypes": [
+		"json",
+		"rust",
+		"python",
+		"markdown",
+		"toml",
+		"yaml"
+	],
+	"python.linting.pylintEnabled": true,
+	"python.linting.enabled": true,
+	"python.jediEnabled": true,
+	"python.pythonPath": "/usr/bin/python3",
+	"python.autoUpdateLanguageServer": true,
+	"python.autoComplete.addBrackets": true,
+	"rust-analyzer.serverPath": "/Users/svet/.local/bin/rust-analyzer"
+}

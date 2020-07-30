@@ -12,11 +12,33 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'rust-lang/rust.vim'
 
 call vundle#end()            " required
+
+
+" ###############################   General Settings   ##################################
+
 filetype plugin indent on    " required
 syntax on
+set hlsearch
+set tabstop=4
+set autoindent
+set wildmenu
+set ruler
+set number
+
+colorscheme codedark
 
 
-" ###################################   Nerdtree   ######################################
+" ##################################   Languages   ######################################
+
+" Python
+let python_highlight_all = 1
+let python_version_2 = 0
+
+" Rust
+let g:rustfmt_autosave = 1
+
+
+" ###################################   NerdTree   ######################################
 
 map <leader>w :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=30
@@ -61,21 +83,11 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+
 " Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
-
-
-" ####################################   Vundle   #######################################
-
-set hlsearch
-set tabstop=4
-set autoindent
-set wildmenu
-set ruler
-set number
-
-colorscheme codedark
+" if has('nvim')
+"   inoremap <silent><expr> <c-space> coc#refresh()
+" else
+"   inoremap <silent><expr> <c-@> coc#refresh()
+" endif

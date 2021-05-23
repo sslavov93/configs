@@ -1,3 +1,5 @@
+ZSH_DISABLE_COMPFIX=true
+
 export ZSH="/Users/svet/.oh-my-zsh"
 ZSH_THEME="agnoster"
 plugins=(git)
